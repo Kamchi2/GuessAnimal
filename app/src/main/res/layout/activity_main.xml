@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/animalImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:onClick="changeImage"
+            android:text="dog"/>
+        <Button
+            android:id="@+id/catBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:onClick="changeImage"
+            android:layout_marginHorizontal="12dp"
+            android:text="cat"/>
+        <Button
+            android:id="@+id/giraffeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:onClick="changeImage"
+            android:text="giraffe"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/thisDogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:textSize="16sp"
+            android:text="that dog"/>
+        <Button
+            android:id="@+id/thisCatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="12dp"
+            android:text="that cat"/>
+        <Button
+            android:id="@+id/thisGiraffeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:textSize="16sp"
+            android:text="that giraffe"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resultBin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="open result"/>
+
+</LinearLayout>
